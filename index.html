@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heart Disease Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Heart Disease Prediction</h1>
+    <p>Enter patient details to get a simple risk prediction</p>
+
+    <form id="heartForm">
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="number" id="bp" placeholder="Resting BP" required />
+      <input type="number" id="cholesterol" placeholder="Cholesterol" required />
+      <input type="number" id="maxHr" placeholder="Max Heart Rate" required />
+      <input type="number" id="oldpeak" step="0.1" placeholder="Oldpeak" required />
+      <input type="number" id="fbs" placeholder="Fasting Blood Sugar (0/1)" required />
+      <input type="number" id="cp" placeholder="Chest Pain Type (0-3)" required />
+      <input type="number" id="exang" placeholder="Exercise Angina (0/1)" required />
+
+      <button type="submit">Predict</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
